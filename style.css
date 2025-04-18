@@ -1,0 +1,126 @@
+/* --- Cài đặt chung --- */
+body {
+    font-family: Arial, sans-serif; /* Font chữ mặc định */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Sắp xếp các phần tử theo cột */
+    min-height: 100vh; /* Chiều cao tối thiểu bằng chiều cao màn hình */
+    background-color: #f4f4f4; /* Màu nền nhẹ */
+}
+
+/* --- Header --- */
+#header {
+    background-color: #e0e0e0; /* Màu nền cho header */
+    padding: 10px 20px;
+    display: flex; /* Sắp xếp logo và tiêu đề */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    border-bottom: 2px solid #c0c0c0;
+}
+
+#logo {
+    height: 60px; /* Điều chỉnh chiều cao logo nếu cần */
+    margin-right: 20px; /* Khoảng cách giữa logo và tiêu đề */
+}
+
+#header h1 {
+    color: red; /* Chữ màu đỏ */
+    font-size: 18pt; /* Cỡ chữ 18pt (tương đương khoảng 24px) */
+    font-weight: bold; /* In đậm */
+    margin: 0; /* Bỏ margin mặc định của h1 */
+}
+
+/* --- Navigation --- */
+#navigation {
+    background-color: #333; /* Màu nền thanh điều hướng */
+    padding: 10px 0;
+}
+
+#navigation ul {
+    list-style: none; /* Bỏ dấu chấm đầu dòng */
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Căn giữa các mục menu */
+}
+
+#navigation ul li {
+    display: inline-block; /* Hiển thị các mục trên cùng một hàng */
+    margin: 0 15px; /* Khoảng cách giữa các mục menu */
+}
+
+#navigation ul li a {
+    color: white; /* Màu chữ trắng */
+    text-decoration: none; /* Bỏ gạch chân */
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền */
+}
+
+#navigation ul li a:hover {
+    background-color: #555; /* Màu nền khi di chuột qua */
+    border-radius: 4px; /* Bo góc nhẹ */
+}
+
+/* --- Main Contents (IFrame) --- */
+#main-contents {
+    flex-grow: 1; /* Cho phép phần này co giãn để lấp đầy không gian */
+    padding: 10px; /* Giảm padding để iframe gần hơn */
+    display: flex; /* Sử dụng flex để iframe chiếm toàn bộ không gian */
+}
+
+#content-frame {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    height: 500px; /* Chiều cao cố định (có thể điều chỉnh) */
+    border: 1px solid #ccc; /* Viền cho iframe */
+    background-color: white; /* Nền trắng cho nội dung iframe */
+}
+
+
+/* --- Headline --- */
+#headline {
+    background-color: #f9f9f9;
+    padding: 15px 20px;
+    margin: 10px 20px; /* Khoảng cách trên dưới và trái phải */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#headline h2 {
+    margin-top: 0;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+#headline ul {
+    list-style: square; /* Kiểu dấu đầu dòng */
+    padding-left: 20px;
+}
+
+#headline ul li {
+    margin-bottom: 10px; /* Khoảng cách giữa các tin */
+}
+
+#headline ul li a {
+    text-decoration: none;
+    color: #0056b3; /* Màu link */
+}
+
+#headline ul li a:hover {
+    text-decoration: underline; /* Gạch chân khi di chuột qua */
+    color: #003d80;
+}
+
+
+/* --- Footer --- */
+#footer {
+    background-color: #333; /* Màu nền giống navigation */
+    color: white; /* Chữ màu trắng */
+    text-align: center; /* Căn giữa chữ */
+    padding: 15px 0;
+    margin-top: auto; /* Đẩy footer xuống dưới cùng nếu nội dung ít */
+}
+
+#footer p {
+    margin: 0; /* Bỏ margin mặc định của p */
+}
